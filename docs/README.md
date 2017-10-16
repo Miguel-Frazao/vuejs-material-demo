@@ -3,7 +3,7 @@ This project is based on <a href="http://vuematerial.io/#/" target="_blank">vue-
 Check the <a target="_blank" href="https://miguel-frazao.github.io/vuejs-material-demo/#/">Demo here</a>
 <br>
 <br>
-To clone: <code>git clone -b material https://github.com/Miguel-Frazao/vuejs-starter-example.git</code>
+To clone: <code>git clone https://github.com/Miguel-Frazao/vuejs-material-demo.git</code>
 
 TO VIEW THIS PROJECT IN DEV MODE:
 
