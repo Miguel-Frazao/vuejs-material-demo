@@ -9,7 +9,7 @@
 						<md-icon>menu</md-icon>
 					</md-button>
 
-					<h2 class="md-title" style="flex: 1">Vue&Material</h2>
+					<h2 class="md-title" style="flex: 1">Vuejs&Material</h2>
 
 					<h4 class="md-hide-medium-and-up">Cart ({{len_prods_cart}}): {{products_cart.total}} €</h4>
 
@@ -30,6 +30,7 @@
 								<router-link to="/" tag="md-menu-item">Just another dropdown</router-link>
 							</md-menu-content>
 						</md-menu>
+						
 						<router-link tag="md-button" class="top-nav-btn" to="/api" exact><md-icon>code</md-icon> <span>Api Req</span></router-link>
 					</div>
 				</div>
