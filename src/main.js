@@ -84,37 +84,37 @@ const router = new VueRouter({
 		{
 			path: '/',
 			component: Home,
-			meta: {page_title: 'Vue&Material Demo | Home'}
+			meta: {page_title: 'Vuejs&Material Demo | Home'}
 		},
 		{
 			path: '/users',
 			component: Users,
-			meta: {page_title: 'Vue&Material Demo | Users'}
+			meta: {page_title: 'Vuejs&Material Demo | Users'}
 		},
 		{
 			path: '/api',
 			component: Api,
-			meta: {page_title: 'Vue&Material Demo | Api'}
+			meta: {page_title: 'Vuejs&Material Demo | Api'}
 		},
 		{
 			path: '/products',
 			component: Products,
-			meta: {page_title: 'Vue&Material Demo | Products'}
+			meta: {page_title: 'Vuejs&Material Demo | Products'}
 		},
 		{
 			path: '/product/:id',
 			component: Product,
-			meta: {page_title: 'Vue&Material Demo | Product'}
+			meta: {page_title: 'Vuejs&Material Demo | Product'}
 		},
 		{
 			path: '/cart',
 			component: Cart,
-			meta: {page_title: 'Vue&Material Demo | Cart'}
+			meta: {page_title: 'Vuejs&Material Demo | Cart'}
 		},
 		{
 			path: '/*',
 			component: NotFound,
-			meta: {page_title: 'Vue&Material Demo | 404 NOT FOUND'}
+			meta: {page_title: 'Vuejs&Material Demo | 404 NOT FOUND'}
 		}
 	]
 });

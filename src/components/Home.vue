@@ -25,7 +25,7 @@
 export default {
   data() {
     return {
-      hello_message: 'Vue&Material demo'
+      hello_message: 'Vuejs&Material demo'
     }
   }
 }
