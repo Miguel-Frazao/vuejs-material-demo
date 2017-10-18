@@ -3,7 +3,7 @@
     <div class="modal-mask" v-on:click="$emit('close')">
       <div class="modal-wrapper">
         <div class="modal-container" v-on:click.stop="">
-          <div class="close-container align-right">
+          <div class="close-container">
             <button class="close-btn" v-on:click="$emit('close')">&times;</button>
           </div>
           <div class="modal-header">
@@ -40,13 +40,6 @@
 </script>
 
 <style scoped>
-.close-container .close-btn {
-  cursor: pointer;
-  border: none;
-  font-size: 20px;
-  background-color: transparent;
-  outline: none;
-}
 .modal-mask {
   position: fixed;
   z-index: 9998;
@@ -58,13 +51,11 @@
   display: table;
   transition: opacity .3s ease;
 }
-
 .modal-wrapper {
   display: table-cell;
   vertical-align: middle;
   padding: 0 15px;
 }
-
 .modal-container {
   max-width: 600px;
   margin: auto auto;
@@ -74,11 +65,19 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
 }
-
+.close-container {
+  text-align: right;
+}
+.close-container .close-btn {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  outline: none;
+}
 .modal-body {
   margin: 20px 0;
 }
-
 .modal-default-button {
   float: right;
 }

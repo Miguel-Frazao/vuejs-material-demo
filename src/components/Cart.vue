@@ -17,7 +17,7 @@
 
 		  <md-table-body>
 		    <md-table-row v-for="(prod, index) in products_cart.products" :key="index">
-		      <md-table-cell><img :src="prod.picture" class="prod_pic"></md-table-cell>
+		      <md-table-cell><img :src="prod.picture" class="table-image"></md-table-cell>
 		      <md-table-cell>{{prod.name}}</md-table-cell>
 		      <md-table-cell>{{prod.qtd}}</md-table-cell>
 		      <md-table-cell>{{prod.total}}</md-table-cell>
@@ -157,7 +157,7 @@ export default {
 	.modal-header h3 {
 		margin: 0;
 	}
-	.prod_pic {
+	.table-image {
 		max-height: 100px;
 	}
 </style>
