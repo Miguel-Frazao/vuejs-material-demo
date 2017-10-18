@@ -25,12 +25,12 @@
 						<md-menu md-align-trigger md-size="4">
 							<md-button md-menu-trigger class="top-nav-btn"><md-icon>keyboard_arrow_down</md-icon> <span>Dropdown</span></md-button>
 							<md-menu-content>
-								<router-link to="/" tag="md-menu-item">Dropdown 1</router-link>
-								<router-link to="/" tag="md-menu-item">Dropdown 2</router-link>
-								<router-link to="/" tag="md-menu-item">Just another dropdown</router-link>
+								<router-link to="#" tag="md-menu-item">Dropdown 1</router-link>
+								<router-link to="#" tag="md-menu-item">Dropdown 2</router-link>
+								<router-link to="#" tag="md-menu-item">Just another dropdown</router-link>
 							</md-menu-content>
 						</md-menu>
-						
+
 						<router-link tag="md-button" class="top-nav-btn" to="/api" exact><md-icon>code</md-icon> <span>Api Req</span></router-link>
 					</div>
 				</div>

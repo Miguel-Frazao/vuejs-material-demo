@@ -10,7 +10,7 @@
   		</div>
   	</transition>
   	<md-button md-theme="green" v-on:click="get_new" class="md-raised md-primary">
-  		<md-icon>add</md-icon><span>request more</span>
+  		<md-icon>add</md-icon><span>Request more</span>
   	</md-button>
   	<p v-for="n in news" :key="n.id">
   		<span>id: {{n.id}}</span>
@@ -35,7 +35,7 @@ export default {
 		}
 	},
 	methods: {
-		get_new() {
+		get_new: function() {
 			this.$http.get('https://hacker-news.firebaseio.com/v0/item/' +this.new_id+ '.json', {
 				before(request) {
 					this.loading = true;
