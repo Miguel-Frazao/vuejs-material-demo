@@ -36,6 +36,8 @@ export default {
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
+[v-cloak] { display:none }
+
 .align-right {
   text-align: right !important;
 }
@@ -47,9 +49,6 @@ export default {
 }
 .diplay-inline-block {
   display: inline-block;
-}
-.seo-header {
-  display: none;
 }
 
 .main-container {
