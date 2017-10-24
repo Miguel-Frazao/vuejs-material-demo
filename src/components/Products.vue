@@ -6,7 +6,7 @@
 			</div>
 			<md-input-container class="md-flex-50 md-flex-xsmall-100">
 				<label for="sort_price">Sort by price</label>
-				<md-select ref="aa" name="country" id="sort_price" v-on:change="sort_price" v-model="sort_dir">
+				<md-select name="country" id="sort_price" v-on:change="sort_price" v-model="sort_dir">
 					<md-option value="up">Upward</md-option>
 					<md-option value="down">Downward</md-option>
 				</md-select>
