@@ -9,7 +9,7 @@
   			</div>
   		</div>
   	</transition>
-  	<md-button md-theme="green" v-on:click="get_new" class="md-raised md-primary">
+  	<md-button v-on:click="get_new" class="md-raised md-accent">
   		<md-icon>add</md-icon><span>Request more</span>
   	</md-button>
   	<p v-for="n in news" :key="n.id">

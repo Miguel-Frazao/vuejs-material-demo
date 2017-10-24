@@ -31,46 +31,16 @@ Vue.material.registerTheme({
 	    textColor: 'white'
 	},
 	accent: {
-		color: 'red',
-		hue: 500,
-		textColor: 'white'
-	}
-  },
-  red: {
-    primary: {
-	    color: 'red',
-	    hue: 600,
-	    textColor: 'white'
-	},
-	accent: {
-		color: 'red',
-		hue: 600,
-		textColor: 'black'
-	}
-  },
-  green: {
-    primary: {
-	    color: 'green',
-	    hue: 600,
-	    textColor: 'white'
-	},
-		accent: {
 		color: 'green',
-		hue: 600,
-		textColor: 'black'
-	}
-  },
-  white: {
-    primary: {
-		color: 'white',
-		hue: 500,
-		textColor: 'black'
+	    hue: 600,
+	    textColor: 'white'
 	},
-	accent: {
-		color: 'black',
+	warn: {
+		color: 'red',
 		hue: 500,
 		textColor: 'white'
-	}
+	},
+	background: 'white'
   },
 });
 

@@ -22,7 +22,7 @@
 		      <md-table-cell>{{prod.qtd}}</md-table-cell>
 		      <md-table-cell>{{prod.total}}</md-table-cell>
 		      <md-table-cell class="align-center">
-		      	<md-button md-theme="green" class="md-icon-button md-raised md-primary" v-on:click="change_qtd(prod, true)">
+		      	<md-button class="md-icon-button md-raised md-accent" v-on:click="change_qtd(prod, true)">
 		      		<md-icon>add</md-icon>
 		      		<md-tooltip md-direction="top">More product</md-tooltip>
 		      	</md-button>
@@ -34,7 +34,7 @@
 					<md-icon>remove_red_eye</md-icon>
 					<md-tooltip md-direction="top">Check product</md-tooltip>
 				</router-link>
-				<md-button class="md-icon-button md-raised md-accent" v-on:click="open_modal(prod)">
+				<md-button class="md-icon-button md-raised md-warn" v-on:click="open_modal(prod)">
 					<md-icon>delete</md-icon>
 					<md-tooltip md-direction="top">Remove from cart</md-tooltip>
 				</md-button>
@@ -81,7 +81,7 @@
 						  	<md-card-content>
 						  	<h3 class="md-subheading">Total: {{prod.total}} €</h3>
 						  	</md-card-content>
-							<md-button md-theme="green" class="md-icon-button md-raised md-primary" v-on:click="change_qtd(prod, true)">
+							<md-button class="md-icon-button md-raised md-accent" v-on:click="change_qtd(prod, true)">
 					      		<md-icon>add</md-icon>
 					      		<md-tooltip md-direction="top">More product</md-tooltip>
 					      	</md-button>
@@ -93,7 +93,7 @@
 								<md-icon>remove_red_eye</md-icon>
 								<md-tooltip md-direction="top">Check product</md-tooltip>
 							</router-link>
-							<md-button class="md-icon-button md-raised md-accent" v-on:click="open_modal(prod)">
+							<md-button class="md-icon-button md-raised md-warn" v-on:click="open_modal(prod)">
 								<md-icon>delete</md-icon>
 								<md-tooltip md-direction="top">Remove from cart</md-tooltip>
 							</md-button>
@@ -106,7 +106,7 @@
 	<modal v-if="showModal" v-on:close="showModal = false">
 		<h3 slot="header">Delete {{modal_item.name}} from cart?</h3>
 		<div slot="footer">
-			<md-button class="md-raised md-accent" v-on:click="remove_from_cart(modal_item)">
+			<md-button class="md-raised md-warn" v-on:click="remove_from_cart(modal_item)">
 				Yes
 			</md-button>
 			<md-button class="md-raised" v-on:click="showModal = false">

@@ -13,7 +13,7 @@
             <label>Phone</label>
             <md-input v-model="new_user.phone"></md-input>
           </md-input-container>
-          <md-button v-on:click="add_user" md-theme="green" class="md-raised md-primary">
+          <md-button v-on:click="add_user" class="md-raised md-accent">
             <md-icon>add</md-icon><span>add user</span>
           </md-button>
         </div>
@@ -60,7 +60,7 @@
               </md-card-media>
             </md-card-area>
             <md-card-actions>
-              <md-button md-theme="red" class="md-primary md-raised delete-user" v-on:click="open_modal(user)"><md-icon>delete</md-icon> Delete user</md-button>
+              <md-button class="md-warn md-raised delete-user" v-on:click="open_modal(user)"><md-icon>delete</md-icon> Delete user</md-button>
             </md-card-actions>
           </md-card>
         </md-whiteframe>
@@ -70,7 +70,7 @@
       <h3 slot="header">Delete {{modal_item.name}}?</h3>
       <p slot="body">Phone: {{modal_item.phone}}</p>
       <div slot="footer" class="align-right">
-        <md-button class="md-raised md-accent" v-on:click="delete_user(modal_item)">
+        <md-button class="md-raised md-warn" v-on:click="delete_user(modal_item)">
           Yes
         </md-button>
         <md-button class="md-raised" v-on:click="showModal = false">

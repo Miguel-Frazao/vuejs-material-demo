@@ -35,8 +35,8 @@
 							<md-card-content class="prod-value">
 					  			<p class="md-subheading">{{prod.value}} €</p>
 					  		</md-card-content>
-							<md-button v-if="prod_in_cart(prod)" md-theme="green" class="md-raised" disabled>On Cart</md-button>
-							<md-button v-else md-theme="green" class="md-icon-button md-raised md-primary" v-on:click="add_to_cart(prod)">
+							<md-button v-if="prod_in_cart(prod)" class="md-raised md-accent" disabled>On Cart</md-button>
+							<md-button v-else class="md-icon-button md-raised md-primary md-accent" v-on:click="add_to_cart(prod)">
 								<md-icon>add_shopping_cart</md-icon>
 							</md-button>
 						</md-card-actions>
